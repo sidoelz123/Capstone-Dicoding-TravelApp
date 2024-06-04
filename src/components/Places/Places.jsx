@@ -1,11 +1,11 @@
 import React from "react";
 import PlaceCard from "./PlaceCard";
-import Img1 from "../../assets/places/boat.jpg";
-import Img2 from "../../assets/places/tajmahal.jpg";
-import Img3 from "../../assets/places/water.jpg";
-import Img4 from "../../assets/places/place4.jpg";
-import Img5 from "../../assets/places/place5.jpg";
-import Img6 from "../../assets/places/place6.jpg"; 
+import Img1 from "../../assets/places/CandiBorobudur.jpg";
+import Img2 from "../../assets/places/Pantaipandawa.jpeg";
+import Img3 from "../../assets/places/dieng.jpg";
+import Img4 from "../../assets/places/rajaampat.jpeg";
+import Img5 from "../../assets/places/malioboro.jpg";
+import Img6 from "../../assets/places/kebunrayabogor.jpeg"; 
 
 const PlacesData = [
   {
@@ -27,18 +27,18 @@ const PlacesData = [
   },
   {
     img: Img3,
-    title: "Monas",
-    location: "Jakarta",
+    title: "Dieng, Negeri atas awan",
+    location: "Wonosobo",
     description:
-      "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the river Yamuna in the Indian city of Agra.",
+      "Dataran Tinggi Dieng, dikenal juga sebagai Dieng Plateau, memiliki ciri khas administratif dan geografis yang langka di Indonesia. Wilayah ini terbagi menjadi dua wilayah administratif yang terpisah, yaitu Dieng Kulon di Kabupaten Wonosobo (bagian barat) dan Dieng Wetan di Kabupaten Banjarnegara (bagian timur)",
     price: 6200,
     type: "Cultural Relax",
   },
   {
     img: Img4,
-    title: "Danau Toba",
-    location: "Sumatera Utara",
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Pulau Raja Ampat",
+    location: "Papua Barat",
+    description: "Raja Ampat: Surga Petualangan Dunia di Ujung Papua. Sekilas pikiran menerawang dan sebuah lukisan elok pun muncul terbayang. Lautan lepas dengan pulau-pulau karang yang tersusun rapih menyambut beberapa ekor lumba-lumba yang berloncatan ceria.",
     price: 6700,
     type: "Cultural Relax",
   },
@@ -47,16 +47,16 @@ const PlacesData = [
     title: "Malioboro",
     location: "Yogyakarta, Jawa Tengah",
     description:
-      "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the river Yamuna in the Indian city of Agra.",
+      "Malioboro merupakan nama salah satu jalan di pusat Kota Yogyakarta. Jalan Malioboro itu sendiri merupakan salah satu jalan dari tiga jalan di Kota Yogyakarta yang membentang dari Tugu Yogyakarta hingga ke perempatan Kantor Pos Yogyakarta.",
     price: 6700,
     type: "Cultural Relax",
   },
   {
     img: Img6,
-    title: "Gunung Bromo",
-    location: "Malang, Jawa Timur",
+    title: "Kebun Raya Bogor",
+    location: "Bogor, Jawa Barat",
     description:
-      "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the river Yamuna in the Indian city of Agra.",
+      "Kebun Raya Bogor adalah sebuah kebun botani besar yang terletak di Kota Bogor, Indonesia. Kebun ini dioperasikan oleh Badan Riset dan Inovasi Nasional(BRIN).",
     price: 6200,
     type: "Cultural Relax",
   },

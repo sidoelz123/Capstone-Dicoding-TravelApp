@@ -11,8 +11,8 @@ const BlogsData = [
     title: "Lawang Sewu, Semarang",
     description:
     "Lawang Sewu merupakan Gedung megah berarsitektur art deco, yang digunakan Belanda sebagai Kantor Pusat Kereta Api (Trem) atau Nederlandsch Indische Spoorweg Maschaappij (NIS) yang terletak di Komplek Tugu Muda. Bangunan karya arsitek Belanda Prof. Jacob F. Klinkhamer dan B.J. Queendag ini menurut sejarah dibangun tahun 1903, kemudian diresmikan pada tanggal 1 Juli 1907. Masyarakat Semarang lebih mengenal gedung ini dengan sebutan Gedung Lawang Sewu, karena gedung ini memiliki jumlah pintu yang banyak, yang dalam bahasa jawa Lawang Sewu yaitu Lawang berarti Pintu dan Sewu yang berarti Seribu. Sekarang Gedung Lawang Sewu ini digunakan sebagai daya tarik wisata berupa peninggalan sejarah arsitek bangunan kuno dan antik, ruang bawah tanah dan menara informasi, sering pula digunakan sebagai tempat pameran dalam even-even tertentu.",
-    author: "Arek Semarang",
-    date: "April 22, 2022",
+    author: "visit jateng",
+    date: "1, Juli 1907",
   },
   {
     id: 1,
