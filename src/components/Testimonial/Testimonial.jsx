@@ -10,9 +10,9 @@ const testimonialData = [
   },
   {
     id: 1,
-    name: "Budi",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/102/102",
+    name: "Ahmad",
+    text: "Aplikasi ini sangat membantu sekali dalam mengakses wisata",
+    img: "https://picsum.photos/101/101",
   },
   {
     id: 1,
