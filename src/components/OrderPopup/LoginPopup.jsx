@@ -28,13 +28,13 @@ const LoginPopup = ({ setOpen }) => {
             {/* Body */}
             <div className="mt-4">
               <input
-                type="text"
-                placeholder="Nama"
+                type="email"
+                placeholder="Email"
                 className="w-full rounded-full border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4"
               />
               <input
-                type="email"
-                placeholder="Email"
+                type="password"
+                placeholder="Password"
                 className="w-full rounded-full border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4"
               />
              
