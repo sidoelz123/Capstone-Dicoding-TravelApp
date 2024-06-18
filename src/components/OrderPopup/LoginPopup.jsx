@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import SignupPopup from "./signup.jsx"; 
+import { Link } from "react-router-dom";
 
 const LoginPopup = ({ setOpen }) => {
   const [showSignup, setShowSignup] = useState(false);
@@ -39,9 +40,11 @@ const LoginPopup = ({ setOpen }) => {
               />
              
               <div className="flex justify-center space-x-2">
+                <Link to={"/profile"} onClick={() => setOpen(false)}>
                 <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-1 px-4 rounded-full ">
                   Login
                 </button>
+                </Link>
 
                 <button
                   className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-1 px-4 rounded-full "
