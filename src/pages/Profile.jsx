@@ -36,40 +36,13 @@ const Profile = () => {
         "Dataran Tinggi Dieng, dikenal juga sebagai Dieng Plateau, memiliki ciri khas administratif dan geografis yang langka di Indonesia. Wilayah ini terbagi menjadi dua wilayah administratif yang terpisah, yaitu Dieng Kulon di Kabupaten Wonosobo (bagian barat) dan Dieng Wetan di Kabupaten Banjarnegara (bagian timur)",
       price: 6200,
       type: "Wonosobo, Jawa Tengah",
-    },
-    {
-      img: Img4,
-      title: "Pulau Raja Ampat",
-      location: "Papua Barat",
-      description:
-        "Raja Ampat: Surga Petualangan Dunia di Ujung Papua. Sekilas pikiran menerawang dan sebuah lukisan elok pun muncul terbayang. Lautan lepas dengan pulau-pulau karang yang tersusun rapih menyambut beberapa ekor lumba-lumba yang berloncatan ceria.",
-      price: 6700,
-      type: "Cultural Relax",
-    },
-    {
-      img: Img5,
-      title: "Malioboro",
-      location: "Yogyakarta, Jawa Tengah",
-      description:
-        "Malioboro merupakan nama salah satu jalan di pusat Kota Yogyakarta. Jalan Malioboro itu sendiri merupakan salah satu jalan dari tiga jalan di Kota Yogyakarta yang membentang dari Tugu Yogyakarta hingga ke perempatan Kantor Pos Yogyakarta.",
-      price: 6700,
-      type: "Cultural Relax",
-    },
-    {
-      img: Img6,
-      title: "Kebun Raya Bogor",
-      location: "Bogor, Jawa Barat",
-      description:
-        "Kebun Raya Bogor adalah sebuah kebun botani besar yang terletak di Kota Bogor, Indonesia. Kebun ini dioperasikan oleh Badan Riset dan Inovasi Nasional(BRIN).",
-      price: 6200,
-      type: "Cultural Relax",
-    },
+    }
   ];
   
   return (
     <>
       <section className="container">
-        <div className="pt-28 flex items-center text-black gap-5">
+        <div data-aos="fade-up"  className="pt-28 flex items-center text-black gap-5">
           <div className="w-36 h-36 rounded-full overflow-hidden">
             <FaUserCircle className="text-neutral-700 w-full h-full" />
           </div>
@@ -78,7 +51,7 @@ const Profile = () => {
             <p>alamat lengkap</p>
           </div>
         </div>
-        <div className="my-10">
+        <div data-aos="fade-up"  className="my-10">
           <div className="">
             <div className="border-b border-gray-200">
               <nav className="-mb-px flex gap-6">
