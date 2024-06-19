@@ -15,7 +15,7 @@ const BlogsData = [
     date: "1, Juli 1907",
   },
   {
-    id: 1,
+    id: 2,
     image: Img2,
     title: "Candi Borobudur, Magelang",
     description:
@@ -24,7 +24,7 @@ const BlogsData = [
     date: "April 22, 2022",
   },
   {
-    id: 1,
+    id: 3,
     image: Img3,
     title: "Pantai Karimun, Jepara",
     description:"KarimunJawa merupakan objek wisata kepulauan yang masuk dalam kawasan Taman Nasional KarimunJawa, tempat ini terletak di Laut Jawa dan masuk dalam kawasan Kabupaten Jepara Jawa Tengah. Destinasi wisata yang satu ini terdiri dari daratan dan lautan dengan luas daratannya sekitar 1.500 hektar dan luas perairannya sekitar 110.000 hektar.",

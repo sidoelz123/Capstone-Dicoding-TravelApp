@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const BlogCard = ({ image, date, title, description, author }) => {
+const BlogCard = ({id, image, date, title, description, author }) => {
   return (
     <>
       <Link
-        to={`/blogs/${title}`}
+        to={`/blogs/${id}`}
         onClick={() => {
           window.scrollTo(0, 0);
         }}

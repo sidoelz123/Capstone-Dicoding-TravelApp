@@ -42,7 +42,7 @@ const Navbar = ({ handleOrderPopup}) => {
   const [open, setOpen] = useState(false)
 
   const toggleMenu = () => {
-    setShowMenu(showMenu);
+    setShowMenu(!showMenu);
   };
 
   return (
@@ -106,20 +106,21 @@ const Navbar = ({ handleOrderPopup}) => {
               </ul>
             </div>
             <div className="flex items-center gap-4">
+              <Link to={"/booking"}>
               <button
                 className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
-                onClick={() => {
-                  handleOrderPopup();
-                }}
               >
                 Booking
               </button>
-              <button
-                className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
-                onClick={()=> setOpen(true)}
-              >
-                Login
-              </button>
+              </Link>
+              {
+                <button
+                  className="hidden md:block bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
+                  onClick={()=> setOpen(true)}
+                >
+                  Login
+                </button>
+              }
               {/* Mobile Hamburger icon */}
               <div className="md:hidden block">
                 {showMenu ? (

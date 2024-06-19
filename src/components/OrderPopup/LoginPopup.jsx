@@ -40,7 +40,7 @@ const LoginPopup = ({ setOpen }) => {
               />
              
               <div className="flex justify-center space-x-2">
-                <Link to={"/profile"} onClick={() => setOpen(false)}>
+                <Link to={"/profile"} >
                 <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-1 px-4 rounded-full ">
                   Login
                 </button>
