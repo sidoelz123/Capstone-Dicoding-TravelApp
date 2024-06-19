@@ -8,7 +8,7 @@ const SignupPopup = ({ setOpen }) => {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [password, setPassword] = useState('');
-  const formData ={email,password}
+  const formData ={name, phone, email ,password}
 
   const handleSignup = async (e) => {
     e.preventDefault();
@@ -16,7 +16,7 @@ const SignupPopup = ({ setOpen }) => {
       const response = await axios.post('https://api-auth-nine.vercel.app/auth/register', formData);
       console.log(response);
       if (response.status === 200) {
-        console.log(response.data.token);
+        console.log(response.data.access_token);
         setShowNotification(true);
         setTimeout(() => {
           setShowNotification(false);

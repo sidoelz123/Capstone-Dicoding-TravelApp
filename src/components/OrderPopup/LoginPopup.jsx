@@ -5,6 +5,37 @@ import { Link } from "react-router-dom";
 
 const LoginPopup = ({ setOpen }) => {
   const [showSignup, setShowSignup] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('https://api-auth-nine.vercel.app/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: `email=${email}&password=${password}`,
+      });
+      
+      if (response.status === 200) {
+        const data = await response.json();
+        const token = data.access_token;
+        console.log(data);
+        console.log(token);
+        localStorage.setItem('token', token);
+        setOpen(false)
+        window.location.href = window.location.href;
+        // Redirect ke halaman setelah login
+      } else {
+        navigate('/login')
+        // Tangani kesalahan login
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }
+
 
   return (
     <>
@@ -27,24 +58,27 @@ const LoginPopup = ({ setOpen }) => {
               </div>
             </div>
             {/* Body */}
-            <div className="mt-4">
+            <form onSubmit={handleSubmit} className="mt-4">
               <input
                 type="email"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
                 placeholder="Email"
                 className="w-full rounded-full border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4"
               />
               <input
                 type="password"
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
                 placeholder="Password"
                 className="w-full rounded-full border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4"
               />
              
               <div className="flex justify-center space-x-2">
-                <Link to={"/profile"} >
-                <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-1 px-4 rounded-full ">
+                
+                <button type="submit" className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-1 px-4 rounded-full ">
                   Login
                 </button>
-                </Link>
 
                 <button
                   className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-1 px-4 rounded-full "
@@ -53,7 +87,7 @@ const LoginPopup = ({ setOpen }) => {
                   Sign Up
                 </button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       )}
